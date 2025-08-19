@@ -1,7 +1,49 @@
 "use client";
 import { motion, AnimatePresence } from "framer-motion";
-import { ArrowRight, ArrowLeft } from "lucide-react";
+import { ArrowRight, X } from "lucide-react";
 import { useEffect, useState } from "react";
+
+const footerLinks = [
+  {
+    title: "Company",
+    items: [
+      { label: "About", href: "/#aboutus-cards" },
+      { label: "Services", href: "/#services" },
+      { label: "Clients", href: "/clients" },
+      { label: "Works", href: "/" },
+    ],
+  },
+  {
+    title: "Services",
+    items: [
+      { label: "Branding", href: "/" },
+      { label: "Experience Design", href: "/" },
+      { label: "Technology", href: "/" },
+      { label: "Marketing", href: "/" },
+    ],
+  },
+  {
+    title: "Other",
+    items: [
+      { label: "Partnership", href: "/" },
+      { label: "Awards", href: "/" },
+      { label: "Insights", href: "/" },
+      { label: "Blogs", href: "/blogs" },
+    ],
+  },
+  {
+    title: "Connect",
+    items: [
+      { label: "Contact: +91 6360760934", href: "tel:+916360760934" },
+      { label: "Email: info@mentrictech.com", href: "mailto:info@mentrictech.com" },
+      {
+        label:
+          "Address: Sri Venkateshwara Complex, 1st floor, Dasarahalli Main Road Near Karagadamma Temple, H.A.F, Post, Hebbal, Bengaluru, Karnataka 560024",
+        href: "https://maps.google.com/?q=Sri+Venkateshwara+Complex+Dasarahalli+Hebbal+Bengaluru",
+      },
+    ],
+  },
+];
 
 export default function Footer() {
   const [isInBottom, setIsInBottom] = useState(false);
@@ -78,37 +120,22 @@ export default function Footer() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: "spring", stiffness: 100, damping: 15 }}
           >
-            {[
-              {
-                title: "Company",
-                items: ["About", "Services", "Industries", "Works"],
-              },
-              {
-                title: "Services",
-                items: ["Branding", "Experience Design", "Technology", "Marketing"],
-              },
-              {
-                title: "Other",
-                items: ["Partnership", "Awards", "Insights", "Blogs"],
-              },
-              {
-                title: "Connect",
-                items: [
-                  "General: +91 111 111 111",
-                  "Sales: +91 111 2222 333",
-                  "Email: info@mentrictech.com",
-                  "HR: +91 222 3333 444",
-                ],
-              },
-            ].map((section, i) => (
+            {footerLinks.map((section, i) => (
               <div key={i}>
                 <h4 className="font-semibold mb-4 text-white text-base">
                   {section.title}
                 </h4>
                 <ul className="space-y-2 text-gray-400">
                   {section.items.map((item, idx) => (
-                    <li key={idx} className="hover:text-white transition">
-                      {item}
+                    <li key={idx}>
+                      <a
+                        href={item.href}
+                        className="hover:text-white transition block"
+                        target={item.href.startsWith("http") ? "_blank" : "_self"}
+                        rel={item.href.startsWith("http") ? "noopener noreferrer" : ""}
+                      >
+                        {item.label}
+                      </a>
                     </li>
                   ))}
                 </ul>
@@ -118,61 +145,75 @@ export default function Footer() {
         )}
       </div>
 
-      {/* Slide-in Form */}
+      {/* Slide-in Form with Overlay */}
       <AnimatePresence>
         {showForm && (
           <motion.div
-            className="fixed inset-y-0 right-0 md:w-1/2 w-full bg-zinc-950/95 backdrop-blur-xl p-6 z-[9999] shadow-2xl overflow-y-auto"
-            initial={{ x: "100%" }}
-            animate={{ x: 0 }}
-            exit={{ x: "100%" }}
-            transition={{ type: "spring", stiffness: 120, damping: 20 }}
+            className="fixed inset-0 z-[9999] flex justify-end bg-black/60 backdrop-blur-sm"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.2 }}
+            onClick={() => setShowForm(false)} // close when clicking overlay
           >
-            <button
-              onClick={() => setShowForm(false)}
-              className="flex items-center text-sm text-gray-400 mb-6 hover:text-white transition"
+            {/* Slide-in Panel */}
+            <motion.div
+              className="md:w-1/2 w-full bg-zinc-950/95 backdrop-blur-xl p-6 shadow-2xl overflow-y-auto"
+              initial={{ x: "100%" }}
+              animate={{ x: 0 }}
+              exit={{ x: "100%" }}
+              transition={{ type: "spring", stiffness: 120, damping: 20 }}
+              onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
             >
-              <ArrowLeft className="mr-1" size={16} /> Back to footer
-            </button>
+              <button
+                onClick={() => setShowForm(false)}
+                className="flex items-center justify-center w-9 h-9 mb-4 rounded-full 
+                          bg-gradient-to-r from-gray-500 to-purple-500 
+                          hover:from-gray-600 hover:to-purple-600 
+                          transition transform hover:scale-110 shadow-md"
+              >
+                <X size={24} className="text-white" />
+              </button>
 
-            <h3 className="text-3xl font-semibold mb-6 tracking-tight">
-              Request a Quote
-            </h3>
+              <h3 className="text-3xl font-semibold mb-6 tracking-tight">
+                Request a Quote
+              </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-5">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <form onSubmit={handleSubmit} className="space-y-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <input
+                    type="text"
+                    placeholder="Your Name"
+                    className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                    required
+                  />
+                  <input
+                    type="email"
+                    placeholder="Your Email"
+                    className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                    required
+                  />
+                </div>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Project Type (e.g. Website, App)"
                   className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
                   required
                 />
-                <input
-                  type="email"
-                  placeholder="Your Email"
-                  className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
+                <textarea
+                  placeholder="Tell us about your project..."
+                  rows={5}
+                  className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-white"
                   required
-                />
-              </div>
-              <input
-                type="text"
-                placeholder="Project Type (e.g. Website, App)"
-                className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
-                required
-              />
-              <textarea
-                placeholder="Tell us about your project..."
-                rows={5}
-                className="bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-white"
-                required
-              ></textarea>
-              <button
-                type="submit"
-                className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all"
-              >
-                Submit Quote Request
-              </button>
-            </form>
+                ></textarea>
+                <button
+                  type="submit"
+                  className="bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all"
+                >
+                  Submit Quote Request
+                </button>
+              </form>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

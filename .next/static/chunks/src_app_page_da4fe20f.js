@@ -9,7 +9,7 @@
   "static/chunks/node_modules_three_build_three_module_230a9f89.js",
   "static/chunks/node_modules_three-stdlib_0bcfe45e._.js",
   "static/chunks/node_modules_tailwind-merge_dist_bundle-mjs_mjs_b854acb4._.js",
-  "static/chunks/node_modules_f6d07cb2._.js"
+  "static/chunks/node_modules_dcfe8468._.js"
 ],
     source: "dynamic"
 });

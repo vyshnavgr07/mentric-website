@@ -3626,7 +3626,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/render/components/motion/proxy.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/framer-motion/dist/es/components/AnimatePresence/index.mjs [app-client] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-right.js [app-client] (ecmascript) <export default as ArrowRight>");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/arrow-left.js [app-client] (ecmascript) <export default as ArrowLeft>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -3634,6 +3634,88 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+const footerLinks = [
+    {
+        title: "Company",
+        items: [
+            {
+                label: "About",
+                href: "/#aboutus-cards"
+            },
+            {
+                label: "Services",
+                href: "/#services"
+            },
+            {
+                label: "Clients",
+                href: "/clients"
+            },
+            {
+                label: "Works",
+                href: "/"
+            }
+        ]
+    },
+    {
+        title: "Services",
+        items: [
+            {
+                label: "Branding",
+                href: "/"
+            },
+            {
+                label: "Experience Design",
+                href: "/"
+            },
+            {
+                label: "Technology",
+                href: "/"
+            },
+            {
+                label: "Marketing",
+                href: "/"
+            }
+        ]
+    },
+    {
+        title: "Other",
+        items: [
+            {
+                label: "Partnership",
+                href: "/"
+            },
+            {
+                label: "Awards",
+                href: "/"
+            },
+            {
+                label: "Insights",
+                href: "/"
+            },
+            {
+                label: "Blogs",
+                href: "/blogs"
+            }
+        ]
+    },
+    {
+        title: "Connect",
+        items: [
+            {
+                label: "Contact: +91 6360760934",
+                href: "tel:+916360760934"
+            },
+            {
+                label: "Email: info@mentrictech.com",
+                href: "mailto:info@mentrictech.com"
+            },
+            {
+                label: "Address: Sri Venkateshwara Complex, 1st floor, Dasarahalli Main Road Near Karagadamma Temple, H.A.F, Post, Hebbal, Bengaluru, Karnataka 560024",
+                href: "https://maps.google.com/?q=Sri+Venkateshwara+Complex+Dasarahalli+Hebbal+Bengaluru"
+            }
+        ]
+    }
+];
 function Footer() {
     _s();
     const [isInBottom, setIsInBottom] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
@@ -3709,7 +3791,7 @@ function Footer() {
                 className: "absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_top_left,_var(--tw-gradient-stops))] from-[#ffffff0a] to-transparent z-0"
             }, void 0, false, {
                 fileName: "[project]/src/components/Footer.jsx",
-                lineNumber: 51,
+                lineNumber: 93,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -3725,7 +3807,7 @@ function Footer() {
                                         children: "Let’s build something great."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.jsx",
-                                        lineNumber: 57,
+                                        lineNumber: 99,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3733,13 +3815,13 @@ function Footer() {
                                         children: "Get started in less than a minute."
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.jsx",
-                                        lineNumber: 60,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.jsx",
-                                lineNumber: 56,
+                                lineNumber: 98,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
@@ -3753,19 +3835,19 @@ function Footer() {
                                         className: "group-hover:translate-x-1 transition-transform"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.jsx",
-                                        lineNumber: 69,
+                                        lineNumber: 111,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Footer.jsx",
-                                lineNumber: 64,
+                                lineNumber: 106,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Footer.jsx",
-                        lineNumber: 55,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, this),
                     !showForm && isExpanded && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -3783,213 +3865,203 @@ function Footer() {
                             stiffness: 100,
                             damping: 15
                         },
-                        children: [
-                            {
-                                title: "Company",
-                                items: [
-                                    "About",
-                                    "Services",
-                                    "Industries",
-                                    "Works"
-                                ]
-                            },
-                            {
-                                title: "Services",
-                                items: [
-                                    "Branding",
-                                    "Experience Design",
-                                    "Technology",
-                                    "Marketing"
-                                ]
-                            },
-                            {
-                                title: "Other",
-                                items: [
-                                    "Partnership",
-                                    "Awards",
-                                    "Insights",
-                                    "Blogs"
-                                ]
-                            },
-                            {
-                                title: "Connect",
-                                items: [
-                                    "General: +91 111 111 111",
-                                    "Sales: +91 111 2222 333",
-                                    "Email: info@mentrictech.com",
-                                    "HR: +91 222 3333 444"
-                                ]
-                            }
-                        ].map((section, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: footerLinks.map((section, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
                                         className: "font-semibold mb-4 text-white text-base",
                                         children: section.title
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.jsx",
-                                        lineNumber: 105,
+                                        lineNumber: 125,
                                         columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
                                         className: "space-y-2 text-gray-400",
                                         children: section.items.map((item, idx)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "hover:text-white transition",
-                                                children: item
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                    href: item.href,
+                                                    className: "hover:text-white transition block",
+                                                    target: item.href.startsWith("http") ? "_blank" : "_self",
+                                                    rel: item.href.startsWith("http") ? "noopener noreferrer" : "",
+                                                    children: item.label
+                                                }, void 0, false, {
+                                                    fileName: "[project]/src/components/Footer.jsx",
+                                                    lineNumber: 131,
+                                                    columnNumber: 23
+                                                }, this)
                                             }, idx, false, {
                                                 fileName: "[project]/src/components/Footer.jsx",
-                                                lineNumber: 110,
+                                                lineNumber: 130,
                                                 columnNumber: 21
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Footer.jsx",
-                                        lineNumber: 108,
+                                        lineNumber: 128,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, i, true, {
                                 fileName: "[project]/src/components/Footer.jsx",
-                                lineNumber: 104,
+                                lineNumber: 124,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Footer.jsx",
-                        lineNumber: 75,
+                        lineNumber: 117,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Footer.jsx",
-                lineNumber: 53,
+                lineNumber: 95,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$components$2f$AnimatePresence$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AnimatePresence"], {
                 children: showForm && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
-                    className: "fixed inset-y-0 right-0 md:w-1/2 w-full bg-zinc-950/95 backdrop-blur-xl p-6 z-[9999] shadow-2xl overflow-y-auto",
+                    className: "fixed inset-0 z-[9999] flex justify-end bg-black/60 backdrop-blur-sm",
                     initial: {
-                        x: "100%"
+                        opacity: 0
                     },
                     animate: {
-                        x: 0
+                        opacity: 1
                     },
                     exit: {
-                        x: "100%"
+                        opacity: 0
                     },
                     transition: {
-                        type: "spring",
-                        stiffness: 120,
-                        damping: 20
+                        duration: 0.2
                     },
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>setShowForm(false),
-                            className: "flex items-center text-sm text-gray-400 mb-6 hover:text-white transition",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
-                                    className: "mr-1",
-                                    size: 16
+                    onClick: ()=>setShowForm(false),
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["motion"].div, {
+                        className: "md:w-1/2 w-full bg-zinc-950/95 backdrop-blur-xl p-6 shadow-2xl overflow-y-auto",
+                        initial: {
+                            x: "100%"
+                        },
+                        animate: {
+                            x: 0
+                        },
+                        exit: {
+                            x: "100%"
+                        },
+                        transition: {
+                            type: "spring",
+                            stiffness: 120,
+                            damping: 20
+                        },
+                        onClick: (e)=>e.stopPropagation(),
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                onClick: ()=>setShowForm(false),
+                                className: "flex items-center justify-center w-9 h-9 mb-4 rounded-full  bg-gradient-to-r from-gray-500 to-purple-500  hover:from-gray-600 hover:to-purple-600  transition transform hover:scale-110 shadow-md",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                                    size: 24,
+                                    className: "text-white"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/Footer.jsx",
-                                    lineNumber: 135,
-                                    columnNumber: 15
-                                }, this),
-                                " Back to footer"
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/Footer.jsx",
-                            lineNumber: 131,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                            className: "text-3xl font-semibold mb-6 tracking-tight",
-                            children: "Request a Quote"
-                        }, void 0, false, {
-                            fileName: "[project]/src/components/Footer.jsx",
-                            lineNumber: 138,
-                            columnNumber: 13
-                        }, this),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
-                            onSubmit: handleSubmit,
-                            className: "space-y-5",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-1 md:grid-cols-2 gap-4",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "text",
-                                            placeholder: "Your Name",
-                                            className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white",
-                                            required: true
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Footer.jsx",
-                                            lineNumber: 144,
-                                            columnNumber: 17
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                            type: "email",
-                                            placeholder: "Your Email",
-                                            className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white",
-                                            required: true
-                                        }, void 0, false, {
-                                            fileName: "[project]/src/components/Footer.jsx",
-                                            lineNumber: 150,
-                                            columnNumber: 17
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/src/components/Footer.jsx",
-                                    lineNumber: 143,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
-                                    type: "text",
-                                    placeholder: "Project Type (e.g. Website, App)",
-                                    className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white",
-                                    required: true
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/Footer.jsx",
-                                    lineNumber: 157,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
-                                    placeholder: "Tell us about your project...",
-                                    rows: 5,
-                                    className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-white",
-                                    required: true
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/Footer.jsx",
-                                    lineNumber: 163,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                    type: "submit",
-                                    className: "bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all",
-                                    children: "Submit Quote Request"
-                                }, void 0, false, {
-                                    fileName: "[project]/src/components/Footer.jsx",
-                                    lineNumber: 169,
-                                    columnNumber: 15
+                                    lineNumber: 175,
+                                    columnNumber: 17
                                 }, this)
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/src/components/Footer.jsx",
-                            lineNumber: 142,
-                            columnNumber: 13
-                        }, this)
-                    ]
-                }, void 0, true, {
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 168,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                className: "text-3xl font-semibold mb-6 tracking-tight",
+                                children: "Request a Quote"
+                            }, void 0, false, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 178,
+                                columnNumber: 15
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                onSubmit: handleSubmit,
+                                className: "space-y-5",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid grid-cols-1 md:grid-cols-2 gap-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "text",
+                                                placeholder: "Your Name",
+                                                className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white",
+                                                required: true
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.jsx",
+                                                lineNumber: 184,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                type: "email",
+                                                placeholder: "Your Email",
+                                                className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white",
+                                                required: true
+                                            }, void 0, false, {
+                                                fileName: "[project]/src/components/Footer.jsx",
+                                                lineNumber: 190,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/src/components/Footer.jsx",
+                                        lineNumber: 183,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "text",
+                                        placeholder: "Project Type (e.g. Website, App)",
+                                        className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white",
+                                        required: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.jsx",
+                                        lineNumber: 197,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+                                        placeholder: "Tell us about your project...",
+                                        rows: 5,
+                                        className: "bg-zinc-800 p-4 rounded-md w-full text-white placeholder-gray-500 resize-none focus:outline-none focus:ring-2 focus:ring-white",
+                                        required: true
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.jsx",
+                                        lineNumber: 203,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "submit",
+                                        className: "bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-200 transition-all",
+                                        children: "Submit Quote Request"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/components/Footer.jsx",
+                                        lineNumber: 209,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/src/components/Footer.jsx",
+                                lineNumber: 182,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/src/components/Footer.jsx",
+                        lineNumber: 160,
+                        columnNumber: 13
+                    }, this)
+                }, void 0, false, {
                     fileName: "[project]/src/components/Footer.jsx",
-                    lineNumber: 124,
+                    lineNumber: 151,
                     columnNumber: 11
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/components/Footer.jsx",
-                lineNumber: 122,
+                lineNumber: 149,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Footer.jsx",
-        lineNumber: 45,
+        lineNumber: 87,
         columnNumber: 5
     }, this);
 }

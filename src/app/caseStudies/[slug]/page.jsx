@@ -98,7 +98,7 @@ export default function CaseStudyDetail({ params }) {
   return (
     <li key={b.slug}>
       <Link
-        href={`/case-studies/${b.slug}`}
+        href={`/caseStudies/${b.slug}`}
         className={`block px-3 py-2 rounded-md transition font-medium ${
           isActive
             ? "border border-purple-500 text-purple-700 bg-purple-50"
