@@ -1,0 +1,195 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.13 0.028 261.692);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.13 0.028 261.692);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.13 0.028 261.692);
+  --primary: oklch(0.21 0.034 264.665);
+  --primary-foreground: oklch(0.985 0.002 247.839);
+  --secondary: oklch(0.967 0.003 264.542);
+  --secondary-foreground: oklch(0.21 0.034 264.665);
+  --muted: oklch(0.967 0.003 264.542);
+  --muted-foreground: oklch(0.551 0.027 264.364);
+  --accent: oklch(0.967 0.003 264.542);
+  --accent-foreground: oklch(0.21 0.034 264.665);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.928 0.006 264.531);
+  --input: oklch(0.928 0.006 264.531);
+  --ring: oklch(0.707 0.022 261.325);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0.002 247.839);
+  --sidebar-foreground: oklch(0.13 0.028 261.692);
+  --sidebar-primary: oklch(0.21 0.034 264.665);
+  --sidebar-primary-foreground: oklch(0.985 0.002 247.839);
+  --sidebar-accent: oklch(0.967 0.003 264.542);
+  --sidebar-accent-foreground: oklch(0.21 0.034 264.665);
+  --sidebar-border: oklch(0.928 0.006 264.531);
+  --sidebar-ring: oklch(0.707 0.022 261.325);
+}
+
+.dark {
+  --background: oklch(0.13 0.028 261.692);
+  --foreground: oklch(0.985 0.002 247.839);
+  --card: oklch(0.21 0.034 264.665);
+  --card-foreground: oklch(0.985 0.002 247.839);
+  --popover: oklch(0.21 0.034 264.665);
+  --popover-foreground: oklch(0.985 0.002 247.839);
+  --primary: oklch(0.928 0.006 264.531);
+  --primary-foreground: oklch(0.21 0.034 264.665);
+  --secondary: oklch(0.278 0.033 256.848);
+  --secondary-foreground: oklch(0.985 0.002 247.839);
+  --muted: oklch(0.278 0.033 256.848);
+  --muted-foreground: oklch(0.707 0.022 261.325);
+  --accent: oklch(0.278 0.033 256.848);
+  --accent-foreground: oklch(0.985 0.002 247.839);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.551 0.027 264.364);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0export const blogs = [
+    {
+      slug: "digital-transformation-education",
+      title: "Empowering the Future: The Digital Transformation of Education and Training",
+      image: "/land.webp",
+      summary: "In today’s fast-evolving digital landscape, the way we teach, learn, and grow professionally is undergoing a fundamental shift. Education and training are no longer confined to physical classrooms or traditional methods. Digitalization is reshaping the future of learning, making it more accessible, personalized, and effective than ever before.",
+      content: `In today’s fast-evolving digital landscape, the way we teach, learn, and grow professionally is undergoing a fundamental shift. Education and training are no longer confined to physical classrooms or traditional methods. Digitalization is reshaping the future of learning, making it more accessible, personalized, and effective than ever before.
+  At Mentric Technologies, we are at the forefront of this transformation—creating intelligent, scalable solutions that empower educators, inspire learners, and support institutions in building a smarter tomorrow.
+  
+  Why Digitalization Matters in Education and Training
+  Digital transformation in education isn’t just a trend—it’s a necessity. Here’s why:
+  Accessibility for All
+   Digital platforms remove geographical and economic barriers, offering students and professionals worldwide equal access to high-quality learning resources.
+  
+  
+  Personalized Learning Experiences
+   Through data-driven insights, learners can receive customized content, real-time feedback, and flexible learning paths tailored to their individual strengths and needs.
+  
+  
+  Empowering Educators
+   Teachers and trainers benefit from tools that simplify course delivery, automate assessments, and enable interactive learning—freeing up time to focus on what matters most: mentoring and inspiration.
+  
+  
+  Scalable Training for Organizations
+   Institutions and enterprises can deliver consistent, on-demand training at scale, improving workforce performance and reducing operational costs.
+  
+  
+  
+  How Mentric Technologies is Leading the Change
+  Our commitment to innovation drives us to create robust EdTech solutions designed to meet the unique needs of learners, educators, and institutions. From AI-driven assessments and interactive learning platforms to analytics dashboards and teacher empowerment tools, we build with purpose and impact.
+  We don’t just digitize learning—we transform it.
+  Student-Centric Platforms that foster engagement, track progress, and support lifelong learning
+  
+  
+  Teacher Empowerment Tools that streamline lesson planning, feedback, and performance tracking
+  
+  
+  Institutional Dashboards that offer actionable insights for decision-makers
+  
+  
+  Hybrid & Remote Learning Solutions designed for flexibility and scalability
+  
+  
+  
+  The Road Ahead
+  As digital technology continues to evolve, so does the potential for smarter, more inclusive, and impactful learning. Whether it’s in schools, universities, or corporate training environments, the fusion of education and technology holds the key to future-ready generations.
+  At Mentric Technologies, we’re proud to be part of this journey—partnering with institutions, educators, and enterprises to shape a brighter, more connected future of learning.`,
+    },
+    {
+      slug: "ai-in-healthcare",
+      title: "Revolutionizing Healthcare with AI",
+      image: "/land.webp",
+      summary: "AI is transforming the healthcare industry...",
+      content: `The complete blog post about AI in healthcare...`,
+    },
+  ];
+  .17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.21 0.034 264.665);
+  --sidebar-foreground: oklch(0.985 0.002 247.839);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0.002 247.839);
+  --sidebar-accent: oklch(0.278 0.033 256.848);
+  --sidebar-accent-foreground: oklch(0.985 0.002 247.839);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.551 0.027 264.364);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+body {
+  font-family: var(--font-roboto), sans-serif;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
