@@ -49,7 +49,9 @@
       "path": "/_next/image",
       "loader": "default",
       "loaderFile": "",
-      "domains": [],
+      "domains": [
+        "ui-avatars.com"
+      ],
       "disableStaticImages": false,
       "minimumCacheTTL": 60,
       "formats": [
@@ -96,7 +98,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/home/karthickravi/Desktop/MentricWeb",
+    "outputFileTracingRoot": "/home/mentric/Documents/mentricwebsite/mentric-website",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -279,10 +281,10 @@
     "bundlePagesRouterDependencies": false,
     "configFileName": "next.config.mjs",
     "turbopack": {
-      "root": "/home/karthickravi/Desktop/MentricWeb"
+      "root": "/home/mentric/Documents/mentricwebsite/mentric-website"
     }
   },
-  "appDir": "/home/karthickravi/Desktop/MentricWeb",
+  "appDir": "/home/mentric/Documents/mentricwebsite/mentric-website",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",

@@ -1,7 +1,7 @@
 {
   "version": 4,
   "routes": {
-    "/clients": {
+    "/caseStudies": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +14,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/clients",
-      "dataRoute": "/clients.rsc",
+      "srcRoute": "/caseStudies",
+      "dataRoute": "/caseStudies.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -78,6 +78,30 @@
         "x-next-revalidate-tag-token"
       ]
     },
+    "/clients": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/clients",
+      "dataRoute": "/clients.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
+    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -126,7 +150,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/caseStudies": {
+    "/team": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -139,8 +163,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/caseStudies",
-      "dataRoute": "/caseStudies.rsc",
+      "srcRoute": "/team",
+      "dataRoute": "/team.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -154,8 +178,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "d2add14e83b75600a0d0007f6bed5f6f",
-    "previewModeSigningKey": "3c5d4c9273d70951dd9da938cff575f01abbe056c57f29e5f1d6dabd0b54329d",
-    "previewModeEncryptionKey": "1dfd6141b3a40f1ca152e2f41b56d274e025d4a3f092321dc86b9595bad2e1c3"
+    "previewModeId": "360269926838304a2422da9b6c347b74",
+    "previewModeSigningKey": "4883edc16c936a5494f09b675954dd3c3b98c09c1d2a1ea2d7913d9f71196302",
+    "previewModeEncryptionKey": "ee889e9792f306a983e55d590e0e722ed23da69a1f8b5ae702f02d488137f106"
   }
 }

@@ -1,4 +1,4 @@
-// File: /home/karthickravi/Desktop/MentricWeb/src/app/blogs/page.jsx
+// File: /home/mentric/Documents/mentricwebsite/mentric-website/src/app/blogs/page.jsx
 import * as entry from '../../../../src/app/blogs/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -1,4 +1,4 @@
-// File: /home/karthickravi/Desktop/MentricWeb/src/app/layout.js
+// File: /home/mentric/Documents/mentricwebsite/mentric-website/src/app/layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
