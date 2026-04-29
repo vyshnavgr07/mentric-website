@@ -1,8 +1,6 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
 import { useScroll, useTransform, motion, useMotionValueEvent } from "framer-motion";
-import { useRouter } from "next/navigation";
-import Image from "next/image";
 
 const products = [
   {
@@ -26,7 +24,6 @@ const products = [
 ];
 
 export default function ProductsPage() {
-  const router = useRouter();
   const scrollRef = useRef(null);
   const [activeIndex, setActiveIndex] = useState(-1); 
 
@@ -83,7 +80,7 @@ const x = useTransform(scrollYProgress, [0, 0.1, 0.3, 0.35], [-200, 0, 0, -200])
               style={{ opacity, scale, x, position: "absolute" }}
               className="flex flex-col items-center justify-center text-center p-6 max-h-[90vh] overflow-y-auto"
             >
-              <ProductCard product={products[0]} router={router} />
+              <ProductCard product={products[0]} />
             </motion.div>
           )}
 
@@ -93,7 +90,7 @@ const x = useTransform(scrollYProgress, [0, 0.1, 0.3, 0.35], [-200, 0, 0, -200])
               style={{ opacity: secondOpacity, scale: secondScale, x: secondX, position: "absolute" }}
               className="flex flex-col items-center justify-center text-center p-6 max-h-[90vh] overflow-y-auto"
             >
-              <ProductCard2 product={products[1]} router={router} />
+              <ProductCard2 product={products[1]} />
             </motion.div>
           )}
         </div>
@@ -177,12 +174,12 @@ const x = useTransform(scrollYProgress, [0, 0.1, 0.3, 0.35], [-200, 0, 0, -200])
 //   );
 // }
 
-function ProductCard({ product, router }) {
+function ProductCard({ product }) {
   return (
     <div className="relative h-screen flex flex-col items-center justify-center text-center px-4">
       {/* Product Image */}
       <div className="absolute hidden lg:block top-1 bottom-[calc(50%-20px)] right-[calc(25%-100px)] w-[200px] h-[200px] rounded-full overflow-hidden shadow-lg">
-        <Image
+        <img
           src={product.image}
           width={320}
           height={320}
@@ -237,7 +234,7 @@ function ProductCard({ product, router }) {
 
       {/* CTA Button */}
       <motion.button
-        onClick={() => router.push(product.link)}
+        onClick={() => (window.location.href = product.link)}
         className="px-8 py-3 text-lg text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 rounded-full font-semibold shadow-md transition duration-300 z-10"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -267,19 +264,19 @@ function ProductCard({ product, router }) {
 
 
 
-function ProductCard2({ product, router }) {
+function ProductCard2({ product }) {
   return (
     <div className="relative h-screen flex flex-col items-center justify-center text-center px-4 ">
       {/* Product Image */}
       <div className="absolute  bottom-79 right-[calc(13%-100px)]  w-[350px] h-[220px] shadow-lg hidden lg:block ">
-  <Image
-    src={product.image}
-    width={420}
-    height={420}
-    alt={`${product.name} Logo`}
-    className="object-contain w-full  h-full"
-  />
-</div>
+        <img
+          src={product.image}
+          width={420}
+          height={420}
+          alt={`${product.name} Logo`}
+          className="object-contain w-full  h-full"
+        />
+      </div>
 
 
    
@@ -328,7 +325,7 @@ function ProductCard2({ product, router }) {
 
       {/* CTA Button */}
       <motion.button
-        onClick={() => router.push(product.link)}
+        onClick={() => (window.location.href = product.link)}
         className="px-8 py-3 text-lg text-white bg-gradient-to-r from-purple-600 to-indigo-600 hover:from-purple-700 hover:to-indigo-700 rounded-full font-semibold shadow-md transition duration-300 z-10"
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}

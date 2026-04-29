@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 const logos = [
   {
@@ -131,7 +131,7 @@ export default function ClientsPage() {
           transition={{ delay: 0.6 }}
         >
           <Link
-            href="/clients"
+            to="/clients"
             className="inline-flex items-center gap-2 text-white border border-white px-6 py-2 rounded-full hover:bg-white hover:text-black transition duration-300"
           >
             View More

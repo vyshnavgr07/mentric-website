@@ -1,15 +1,14 @@
 "use client";
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
+import { Link } from "react-router-dom";
 
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "About Us", href: "#aboutus-cards" },
   { label: "Products", href: "#products" },
   { label: "services", href: "#services" },
-   { label: "Resources", href: "#resources" },
-  { label: "Career", href: "career" },
+  { label: "Resources", href: "#resources" },
+  { label: "Career", href: "/career" },
   { label: "Contact us", href: "#footer" },
 ];
 
@@ -21,8 +20,8 @@ export default function Navbar() {
       <div className="relative flex items-center justify-between max-w-7xl mx-auto">
         {/* Left: Logo */}
         <div className="flex-shrink-0">
-          <Link href="/">
-            <Image
+          <Link to="/">
+            <img
               src="/log.png"
               alt="Logo"
               width={150}

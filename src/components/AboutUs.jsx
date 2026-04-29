@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
@@ -31,7 +30,7 @@ const AboutUs = () => {
       <header className="absolute top-0 left-0 w-full z-20 py-4">
         <div className="flex items-center justify-between px-4 sm:px-6 md:px-8 lg:px-16 max-w-screen-xl mx-auto">
           {/* Logo */}
-          <Image
+          <img
             src="/log.png"
             alt="Logo"
             width={140}

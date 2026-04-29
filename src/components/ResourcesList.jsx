@@ -1,7 +1,7 @@
 "use client";
 
 import * as motion from "motion/react-client";
-import { useRouter } from "next/navigation";
+import { useNavigate } from "react-router-dom";
 
 const cards = [
   {
@@ -137,7 +137,7 @@ const buttonStyle = {
 };
 
 export default function ScrollImageCards() {
-  const router = useRouter();
+  const navigate = useNavigate();
 
   return (
     <div style={container} className="px-4 ">
@@ -171,7 +171,7 @@ export default function ScrollImageCards() {
               </div>
               <button
                 style={buttonStyle}
-                onClick={() => router.push(link)}
+                onClick={() => navigate(link)}
               >
                View More
               </button>
